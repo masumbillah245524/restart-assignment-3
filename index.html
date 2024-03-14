@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Restart Assignment 3</title>
+</head>
+<!--Link of DaisyUi-->
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.3/dist/full.min.css" rel="stylesheet" type="text/css" />
+<!--Link of Tailwind CSS-->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+<!--Link of Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!--Link External CSS-->
+<link rel="stylesheet" href="styles/styles.css">
+<!--Custom CSS-->
+<style>
+body{
+    font-family: "Manrope", sans-serif;
+}
+</style>
+<body>
+    <header class="container mx-auto">
+       <!--Navbar-->
+       <div class="navbar bg-base-100 my-5">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li class="text-[#FF4240]"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <a class=" text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li class="text-[#FF4240]"><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Pages</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+         <a href="">  <img class="mr-4 w-5" src="Images/Frame.png" alt=""></a> 
+          <a class="btn hover:bg-transparent hover:text-black bg-[#FF4240] text-[#FFF]">Get Ticket</a>
+        </div>
+      </div>
+      <!--Banner Part-->
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img src="Images/1.png" class="w-full h-[600px]" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+        <div id="slide2" class="carousel-item relative w-full">
+          <img src="Images/hockyField.jpg" class="w-full  h-[600px] rounded-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a> 
+             
+          </div>
+        </div> 
+        <div id="slide3" class="carousel-item relative w-full">
+          <img src="Images/hockyField2.jpg" class="w-full h-[600px] rounded-2xl" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a> 
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div> 
+      
+      </div>
+   
+    </header>
+    <main class="container mx-auto">
+   <!--Hokey Description -->
+   <section>
+        <div class="text-center my-10 pt-10">
+<h3 class="text-4xl font-extrabold">Professional Hockeys Club</h3>
+<p class="w-[600px] mx-auto my-4" >"Professional Hockeys Club" is a premier sports organization showcasing top-tier ice hockey talent, competing at the highest levels of the sport. With a rich history and dedicated fanbase, the club epitomizes excellence in athleticism, teamwork, and sportsmanship. </p>
+        </div>
+        <div class="flex gap-6 my-12">
+            <div class="flex-1 ">
+                <div class="relative ml-[70px]">
+                    <div class="w-[143.5px] h-[143.5px] border-8 border-solid border-[#E7E7E8] rounded-full relative"></div>
+                    <div class="radial-progress text-[#dc2626] absolute top-0 left-0 " style="--value:87; --size:9rem; --thickness: .5rem;" role="progressbar">87%</div>
+                </div>
+                <h4 class="text-2xl font-bold text-center py-2">Prayer Facility</h4>
+                <p class="text-center">
+                    A dedicated space within the professional hockey club's premises, providing athletes and staff a serene environment for reflection, meditation, and spiritual practices, fostering holistic well-being and mental fortitude
+                </p>
+            </div>
+            <div class="flex-1">
+                <div class="relative ml-[70px]">
+                    <div class="w-[143.5px] h-[143.5px] border-8 border-solid border-[#E7E7E8] rounded-full relative"></div>
+                    <div class="radial-progress text-[#49D293] absolute top-0 left-0 " style="--value:95; --size:9rem; --thickness: .5rem;" role="progressbar">95%</div>
+                </div>
+                <h4 class="text-2xl font-bold text-center py-2">Experienced Coach</h4>
+                <p class="text-center">
+                    A seasoned leader within the professional hockey club, bringing invaluable expertise, strategic guidance, and mentorship to elevate team performance and nurture player development.
+                </p>
+            </div>
+            <div class="flex-1 ">
+                <div class="relative ml-[70px]">
+                    <div class="w-[143.5px] h-[143.5px] border-8 border-solid border-[#E7E7E8] rounded-full relative"></div>
+                    <div class="radial-progress text-amber-300 absolute top-0 left-0 " style="--value:90; --size:9rem; --thickness: .5rem;" role="progressbar">90%</div>
+                </div>
+                <h4 class="text-2xl font-bold text-center py-2">Senior Player</h4>
+                <p class="text-center">
+                    A cornerstone of the professional hockey club, embodying skill, leadership, and dedication, providing invaluable experience and inspiration to teammates on and off the ice.
+                </p>
+            </div>
+            <div class="flex-1 ">
+                <div class="relative ml-[70px]">
+                    <div class="w-[143.5px] h-[143.5px] border-8 border-solid border-[#E7E7E8] rounded-full relative"></div>
+                    <div class="radial-progress text-[#4C8DF1] absolute top-0 left-0 " style="--value:80; --size:9rem; --thickness: .5rem;" role="progressbar">80%</div>
+                </div>
+                <h4 class="text-2xl font-bold text-center py-2">Training Ground</h4>
+                <p class="text-center">
+                    The heart of the professional hockey club's preparation, offering state-of-the-art facilities and expert coaching to hone skills, foster teamwork, and achieve peak performance.
+                </p>
+            </div>
+        </div>
+  </section>
+   <!--Program Part-->
+   <section>
+    <div class="text-center my-10 pt-10">
+        <h3 class="text-4xl font-extrabold">Program Sections</h3>
+        <p class="w-[600px] mx-auto my-4" > Structured segments within the professional hockey club's regimen, catering to diverse aspects such as skill development, fitness conditioning, tactical strategies, and mental preparation, ensuring comprehensive player growth and team cohesion.</p>
+        </div>
+        <div class="flex gap-6">
+            <div class="relative  ">
+           <img class="w-[650px] opacity-.5" src="Images/2.png" alt="">
+            <div class=" absolute top-20 left-9">
+            <h4 class="text-2xl font-bol text-white">Junior Program</h4>
+            <p class="text-white my-4">The nurturing hub within the professional hockey club, fostering the next generation of talent through tailored coaching, skill development, and mentorship, laying the foundation for future success on and off the ice</p>
+            <button class="btn bg-[#FF4240] text-white">Register Now</button>
+            </div>
+            </div>
+            <div class="relative  ">
+            <img class="w-[650px]" src="Images/3.png" alt="">
+            <div class=" absolute top-20 left-9">
+                <h4 class="text-2xl font-bold text-white">Teenager Program</h4>
+                <p class="text-white my-4">Tailored for emerging talent, the professional hockey club's initiative offers specialized coaching and development opportunities to young players, empowering them to refine their skills and flourish within the sport</p>
+                <button class="btn bg-[#FF4240] text-white">Register Now</button>
+            </div>
+            </div>
+        </div>
+        <div class="relative mt-6">
+            <img class="w-[1300px]" src="Images/4.png" alt="">
+            <div class=" absolute top-40 left-9">
+                <h4 class="text-2xl font-bold text-white">Professional Program</h4>
+                <p class="text-white my-4">The pinnacle offering of the hockey club, designed for elite athletes seeking to compete at the highest level, featuring rigorous training, advanced coaching, and strategic development to excel in professional hockey.</p>
+                <button class="btn bg-[#FF4240] text-white">Register Now</button>
+            </div>  
+        </div>
+   </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
